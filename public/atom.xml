@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title><![CDATA[郑梦佳的blog]]></title>
+  <subtitle><![CDATA[技术宅,diy电子设备,编程,黑苹果]]></subtitle>
+  <link href="/atom.xml" rel="self"/>
+  <link href="http://zmj.taojinroad.com/"/>
+  <updated>2014-02-07T11:27:22.693Z</updated>
+  <id>http://zmj.taojinroad.com/</id>
+  
+  <author>
+    <name><![CDATA[郑梦佳]]></name>
+    <email><![CDATA[mengjia1999@gmail.com]]></email>
+  </author>
+  
+  <generator uri="http://zespia.tw/hexo/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[台式机安装esxi和ros，自已diy小米路由]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/07/esxi/"/>
+    <id>http://zmj.taojinroad.com/2014/02/07/esxi/</id>
+    <published>2014-02-07T07:07:36.000Z</published>
+    <updated>2014-02-07T11:02:23.000Z</updated>
+    <content type="html"><![CDATA[<h3 id="-esxi-"><strong>安装esxi</strong></h3>
+<a id="more"></a>
+
+<p>台式机安装最主要是找不到网卡，最主要是需要一个网卡</p>
+<p>网卡：Intel Pro 1000 MT Desktop Adapter</p>
+<p>注意，这里面最特别的是网卡，机器自带的网卡不受支持，因此需要你另外购买。
+Intel Pro/1000 MT Desktop Adapter 一般电脑城都有，二手的，仿冒的，都可以。
+一般就几十元左右，很便宜。买的时候，看清楚是82540EM芯片就可以了。
+大家可以到我的小店购买，也可以淘宝一下，我的15元一个
+<a href="http://item.taobao.com/item.htm?id=37192973409" target="_blank">http://item.taobao.com/item.htm?id=37192973409</a></p>
+<h3 id="-ros-"><strong>自己实现小米路由，安装ros</strong></h3>
+<p>作为技术宅，diy过很多很搞笑的东西，自己很喜欢折腾，有一个天看到小米路由，我想着自己不如实现一个，于是家里破旧的台式机终于有用了。收二手的说100元回收，自己那个心疼啊，想想自己几千大洋买来的。痛下杀手，自己diy一个小米路由。</p>
+<p>首先选择一个系统：</p>
+<p>我使用了ros <a href="http://pan.baidu.com/s/1nt2nJKX" target="_blank">下载链接</a> 里面包含有安装和使用教程，已经是破解版</p>
+<p>一般的台式机只有一个网卡，需要加多一个网卡，大家可以到我的
+一般就几十元左右，很便宜。买的时候，看清楚是82540EM芯片就可以了。
+大家可以到我的小店购买，也可以淘宝一下，我的15元一个</p>
+<p><a href="http://item.taobao.com/item.htm?id=37192973409" target="_blank">http://item.taobao.com/item.htm?id=37192973409</a></p>
+<h3 id="-ros-wifi-"><strong>Ros 实现wifi功能</strong></h3>
+<p>后续添加</p>
+]]></content>
+    <summary type="html"><![CDATA[<h3 id="-esxi-"><strong>安装esxi</strong></h3>
+]]></summary>
+    
+      <category term="ros" scheme="http://zmj.taojinroad.com/tags/ros/"/>
+    
+      <category term="esxi" scheme="http://zmj.taojinroad.com/tags/esxi/"/>
+    
+      <category term="ros" scheme="http://zmj.taojinroad.com/categories/ros/"/>
+    
+      <category term="esxi" scheme="http://zmj.taojinroad.com/categories/ros/esxi/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[dns错误检查工具，dns基准工具]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/05/dns/"/>
+    <id>http://zmj.taojinroad.com/2014/02/05/dns/</id>
+    <published>2014-02-05T15:37:43.000Z</published>
+    <updated>2014-02-07T10:01:25.000Z</updated>
+    <content type="html"><![CDATA[<p>很多人碰到dns有问题，我这就碰到部分dns无法访问站点的错误，而且是广州的，大家可以下载试试这个
+<a href="https://support.dnspod.cn/Public/files/check_dns.zip" target="_blank">工具</a></p>
+<p>还有就是这个网站
+<a href="http://pagespeed.webkaka.com" target="_blank">http://pagespeed.webkaka.com</a></p>
+]]></content>
+    
+    
+      <category term="dns" scheme="http://zmj.taojinroad.com/tags/dns/"/>
+    
+      <category term="dns" scheme="http://zmj.taojinroad.com/categories/dns/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[hexo左边添加 关注github]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/05/hexo3/"/>
+    <id>http://zmj.taojinroad.com/2014/02/05/hexo3/</id>
+    <published>2014-02-05T02:55:23.000Z</published>
+    <updated>2014-02-05T02:57:21.000Z</updated>
+    <content type="html"><![CDATA[<p>进入到<a href="https://github.com/blog/273-github-ribbons" target="_blank">https://github.com/blog/273-github-ribbons</a></p>
+<p><a id="more"></a>
+拷贝代码添加到header.ejs中</p>
+]]></content>
+    <summary type="html"><![CDATA[<p>进入到<a href="https://github.com/blog/273-github-ribbons" target="_blank">https://github.com/blog/273-github-ribbons</a></p>
+<p>]]></summary>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[hexo学习]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/04/hexo2/"/>
+    <id>http://zmj.taojinroad.com/2014/02/04/hexo2/</id>
+    <published>2014-02-04T13:14:01.000Z</published>
+    <updated>2014-02-04T15:59:15.000Z</updated>
+    <content type="html"><![CDATA[<h1 id="themes">themes</h1>
+<p>存放主题文件，默认主题为<code>light</code>
+<a id="more"></a></p>
+<p><strong>languages:</strong> 语言配置文件</p>
+<p><strong>layout:</strong> 布局文件，该文件加内容有待研究，</p>
+<p><em><code>_partial</code></em> 为网页每个部分的布局，如<code>header</code>博客的头部进行配置；<code>comment</code>用于设置评论配置；<code>google_analytics</code>用于配置google分析工具；<code>after_footer</code>貌似用于每篇文章打开的配置，这里可以将mathjax加载到其中。</p>
+<p><em><code>_widget</code></em> 为页面添加模块，里面包括<code>category</code>（文章分类）、 <code>recent_posts</code>（最近文章） <code>search</code>（搜索） <code>tag（标签）</code> <code>tagcloud</code>（标签云） ，而加载这些widget需要在theme的<code>_config</code>中进行配置。</p>
+<p>其他文件还不大明白</p>
+<p><strong>source:</strong> 存放资源，有待研究。不过可以吧一些图片文件放在该文件夹下，如博客的大小图标，
+<a id="more"></a></p>
+<h1 id="source">source</h1>
+<p><strong>_dtafts:</strong> 保存草稿位置，生成命令：<code>hexo new draft &quot;draftName&quot;</code>
+                            发布草稿命令：<code>hexo publish &quot;draftName&quot;</code></p>
+<p><strong>_posts:</strong> 保存发布的文章，生成命令：<code>hexo new post &quot;postName&quot;</code> 或者<code>hexo new &quot;postNam&quot;</code></p>
+<p><strong>about:</strong> 用户生成的关于page ，生成命令：<code>hexo new page &quot;newPageName&quot;</code>
+                在生成about目录后about中会自动生成一个文件<code>index.md</code>
+                为了使生成的page可以显示、使用，需要在主题的配置文件即<code>themes\light\_config.yml</code>中在<code>menu</code>中添加<code>About: /about</code>前面的<code>About</code>为显示名称，后面的存储名称，</p>
+<h1 id="script">script</h1>
+<p>不清楚有啥用，从名字上来看应该是存放脚本文件的</p>
+<h1 id="scaffolds">scaffolds</h1>
+<p>创建<code>draft</code> <code>post</code> <code>page</code> <code>photo</code>时用于生成头文件</p>
+]]></content>
+    <summary type="html"><![CDATA[<h1 id="themes">themes</h1>
+<p>存放主题文件，默认主题为<code>light</code>
+]]></summary>
+    
+      <category term="hexo" scheme="http://zmj.taojinroad.com/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://zmj.taojinroad.com/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[使用Hexo搭建个人博客(1)]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/03/hexo1/"/>
+    <id>http://zmj.taojinroad.com/2014/02/03/hexo1/</id>
+    <published>2014-02-03T07:12:35.000Z</published>
+    <updated>2014-02-04T15:59:29.000Z</updated>
+    <content type="html"><![CDATA[<p>存放主题文件，默认主题为<code>light</code>
+    <a id="more"></a></p>
+<h3 id="-hexo-"><strong>Hexo简介</strong></h3>
+<p>Hexo是一个由Node.js驱动的,简单、快速、强大的Blog框架。可以快速的生成静态网页托管在GitHub、BAE等平台上。对Markdown有很好的支持，并支持从Wordpress、Octopress迁移。
+Hexo由台湾地区的开发者编写，他的blog地址请猛击此处，欢迎前去膜拜。<a id="more"></a></p>
+<p>项目主页
+<a href="https://github.com/tommy351/hexo" target="_blank">https://github.com/tommy351/hexo</a></p>
+<p>使用手册
+<a href="http://zespia.tw/hexo/docs/" target="_blank">http://zespia.tw/hexo/docs/</a></p>
+<h3 id="-"><strong> 准备工作</strong></h3>
+<p>一颗不安于现状、充满好奇、爱折腾的心！</p>
+<p><strong>安装Git</strong></p>
+<pre><code>yum install git
+</code></pre><p><strong>安装Node</strong></p>
+<p>先介绍两个工具</p>
+<ol>
+<li>nvm 是nodejs version manager的简称，即：nodejs版本管理</li>
+<li>npm 是nodejs package manager的简称，即：nodejs模块管理</li>
+</ol>
+<p><strong>安装nvm</strong></p>
+<pre><code>curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+echo &quot;. ~/.nvm/nvm.sh&quot; &gt;&gt; ~/.bashrc
+</code></pre><p>断开终端，再次连接后执行</p>
+<pre><code>nvm install 0.10.24
+</code></pre><p>安装npm</p>
+<pre><code>curl https://npmjs.org/install.sh | sh
+</code></pre><p>使用npm</p>
+<pre><code>npm use 0.10.24
+</code></pre><p>配置默认版本</p>
+<p>如果希望断开连接后继续使用，需要输入如下命令</p>
+<pre><code>npm update
+</code></pre><p><strong>配置GitHub</strong></p>
+<p>基本的注册使用就不再赘述，这里所涉及的配置是为了给Hexo发布到GitHub所做准备。
+配置ssh key
+在服务器上生成ssh key</p>
+<pre><code>cd ~/.ssh
+ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+</code></pre><p>一路回车即可，执行完毕会生成id_rsa和id_rsa.pub两个文件，将id_rsa.pub中的内容全部复制；
+在GitHub上添加Key
+进入GitHub - Account settings - SSH Keys - Add SSH key，将刚刚复制的内容全部粘贴进即可；
+测试</p>
+<pre><code>ssh -T git@github.com
+</code></pre><p>成功的话会有successfully的提示；
+ssh key的详细配置可参考官方文档：
+<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">https://help.github.com/articles/generating-ssh-keys</a>
+配置自己的github.io页面
+登入GitHub后选择Create New repository,Repository name需要符合username.github.io的命名规则。
+github.io
+github.io</p>
+<h3 id="-"><strong>基本安装</strong></h3>
+<p>Hexo的安装</p>
+<pre><code>npm install -g hexo
+hexo init /data/www/wwwroot/hexo #指定hexo工作目录
+Hexo的使用
+hexo n/new 写文章
+hexo g/generate 生成
+hexo s/server 本地调试，localhost:4000
+hexo d/deploy 发布文章
+Hexo的基本配置
+</code></pre><p>Hexo的整体配置是Hexo根目录中的_config.yml文件，大部分配置可以根据提示了解用处，不明白的可以参考手册、百度、Google，此处不再赘述。
+如果要发布文章到GitHub，需要修改_config.yml中的Deployment段</p>
+<pre><code>deploy:
+  type: github
+   repository: https://github.com/mayiwei/mayiwei.github.io.git
+   branch: master
+</code></pre><p>其余配置段请参考Hexo使用手册</p>
+<p>系统扩展
+更换主题
+下载主题</p>
+<pre><code>cd hexo/theme
+git clone https://github.com/hexojs/hexo-theme-    light.git light
+</code></pre><p>更多主题可以在<a href="https://github.com/tommy351/hexo/wiki/Themes找到。" target="_blank">https://github.com/tommy351/hexo/wiki/Themes找到。</a></p>
+<p>配置主题</p>
+<pre><code>vim hexo/_config.yml
+theme light
+</code></pre><h3 id="-github-"><strong>生成并部署到GitHub</strong></h3>
+<pre><code>hexo g
+hexo d
+</code></pre><h3 id="-"><strong>安装评论框</strong></h3>
+<p>因为Hexo生成的是静态文件，所以评论等动态内容需要使用第三方扩展，这里推荐使用多说。</p>
+<p><a href="http://duoshuo.com/" target="_blank">注册多说帐号</a></p>
+<p><strong>配置多说</strong></p>
+<p>vim hexo/theme/light/layput/_partial/comment.ejs
+<!-- Duoshuo Comment BEGIN --></p>
+<p><div class="ds-thread"></div></p>
+<p><script type="text/javascript">
+var duoshuoQuery = {short_name:&quot;mayiwei&quot;};
+(function() {
+    var ds = document.createElement(&#39;script&#39;);
+    ds.type = &#39;text/javascript&#39;;ds.async = true;
+    ds.src = &#39;<a href="http://static.duoshuo.com/embed.js" target="_blank">http://static.duoshuo.com/embed.js</a>&#39;;
+    ds.charset = &#39;UTF-8&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] 
+    || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(ds);
+})();
+</script>
+<!-- Duoshuo Comment END --></p>
+<p><strong>生成并部署</strong></p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装RSS插件</strong></p>
+<p>安装</p>
+<pre><code>npm install hexo-generator-feed
+</code></pre><p>配置</p>
+<pre><code>vim hexo/_config.yml
+plugins:
+- hexo-generator-feed
+vim hexo/theme/light/_config.yml
+rss: /atom.xml
+</code></pre><p><strong>生成并部署</strong></p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装sitemap插件</strong></p>
+<p>安装</p>
+<pre><code>npm install hexo-generator-sitemap
+</code></pre><p>配置</p>
+<pre><code>vim hexo/_config.yml
+plugins:
+- hexo-generator-sitemap
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装wordpress迁移插件</strong></p>
+<p>安装插件</p>
+<pre><code>npm install hexo-migrator-wordpress
+</code></pre><p>登录wordpress-》工具-》导出xml
+导入</p>
+<pre><code>hexo migrate wordpress source.xml
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><h3 id="-"><strong>安装微博挂件</strong></h3>
+<p>去app.weibo.com获取代码</p>
+<p>配置</p>
+<pre><code>vim hexo/_config.ynl
+widgets:
+- weibo
+
+vim hexo/themes/light/layout/_widget/weibo.js
+&lt;iframe width=&quot;100%&quot; height=&quot;550&quot; class=&quot;share_self&quot;  frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;http://widget.weibo.com/weiboshow/index.php?language=&amp;width=0&amp;height=550&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=1&amp;isTitle=1&amp;noborder=1&amp;isWeibo=1&amp;isFans=1&amp;uid=1434492110&amp;verifier=f479351c&amp;dpc=1&quot;&gt;&lt;/iframe&gt;
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><h3 id="-"><strong>安装分享按钮</strong></h3>
+<p>去百度分享获取分享代码</p>
+<p>配置</p>
+<pre><code>vim themes/light/layout/_partial/article.ejs
+</code></pre><p>删除</p>
+<p>&lt;%-partial(&#39;post/share&#39;)%&gt;</p>
+<p>替换为刚刚获取的分享代码
+生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装百度统计</strong></p>
+<p>去百度统计获取统计代码</p>
+<p>配置</p>
+<pre><code>vim themes/light/layout/_partial/baidu_analytics.ejs
+&lt;% if (theme.baidu_analytics){ %&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+#Your_Baidu_Analytics_Code
+&lt;/script&gt;
+&lt;% } %&gt;
+
+vim hexo/themes/light/_config.yml
+baidu_analytics: true
+
+
+vim hexo/themes/light/layout/_partial/head.ejs
+在/head前添加
+&lt;%- partial(&#39;baidu_analytics&#39;) %&gt;
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><h4 id="-favicon-"><strong>添加favicon</strong></h4>
+<p>制作facicon<a href="http://www.faviconer.com/" target="_blank">http://www.faviconer.com/</a></p>
+<p>配置
+    vim hexo/themes/light/layout/_partial/head.ejs
+删除
+    link href=&quot;&lt;%- config.root %&gt;favicon.png&quot; rel=&quot;icon&quot;&gt;
+替换为</p>
+<pre><code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-ico&quot;&gt;
+</code></pre><p>将制作好的favicon放到hexo/source</p>
+<p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p>添加分类、标签云widget</p>
+<pre><code>vim hexo/themes/light/_config.yml
+widgets:
+- category
+- tagcloud
+</code></pre><p>添加友情链接widget
+添加配置文件</p>
+<pre><code>vim hexo/themes/light/layout/_widget/blogroll.ejs
+&lt;div class=&quot;widget tag&quot;&gt;
+&lt;h3 class=&quot;title&quot;&gt;友情链接&lt;/h3&gt;
+&lt;ul class=&quot;entry&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;http://mayiwei.com/&quot; title=&quot;OPS Notes&quot;&gt;OPS Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre><p>配置</p>
+<pre><code>vim hexo/theme/light/_config.yml
+widgets:
+- blogroll
+</code></pre><h3 id="-"><strong>自定义页面</strong></h3>
+<p>生成自定义页面</p>
+<pre><code>hexo n page &quot;about&quot;
+</code></pre><p>到source/about/index.md编辑内容</p>
+<p>添加自定义页</p>
+<pre><code>vim hexo/themes/light/_config.yml
+
+menu:
+ 关于: /about
+</code></pre><p><strong>自定义404</strong>
+使用腾讯公益的404页面，详见：<a href="http://www.qq.com/404/" target="_blank">http://www.qq.com/404/</a>
+此自定义404页面只对顶级域名生效</p>
+<pre><code>vim hexo/source/404.html
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;title&gt;404&lt;/title&gt;                                                                                                                                       
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;404 Page Not Found&lt;/h1&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://    www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/    script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="-"><strong>系统优化</strong></h3>
+<p>使用自己的域名
+建立CNAME文件</p>
+<pre><code>vim hexo/source/CNAME
+mayiwei.com
+</code></pre><p>修改你的域名A记录，指向204.232.175.78
+如果需要其他二级域名，建立cname记录到usrname.github.io即可。
+主页文章显示摘要
+编辑md文件的时候，在要作为摘要的文字后面添加<a id="more"></a>即可。</p>
+<h3 id="-categories-"><strong>生成categories配置项</strong></h3>
+<p>在scaffolds/post.md中，添加一行categories:。
+同理可应用在page.md和photo.md。</p>
+<h3 id="-node-js-"><strong>关于Node.js</strong></h3>
+<p>Node.js是一个事件驱动I/O服务端JavaScript环境，基于Google的V8引擎。目的是为了提供撰写可扩充网络程序，如Web服务。[1]第一个版本由Ryan Dahl于2009年发布，后来，Joyent雇用了Dahl，并协助发展Node.js。与一般JavaScript不同的地方，Node.js并不是在Web浏览器上运行，而是一种在服务器上运行的Javascript服务端JavaScript。</p>
+<p><strong>关于npm命令</strong></p>
+<pre><code>npm install &lt;name&gt;         # 安装安装nodejs的依赖包
+npm install &lt;name&gt; -g      # 将包安装到全局环境中
+npm install &lt;name&gt; --save  # 安装的同时，将信息写入    package.json中
+npm init                   # 会引导你创建一个    package.json文件，包括名称、版本、作者这些信息等
+npm remove &lt;name&gt;          # 移除
+npm update &lt;name&gt;          # 更新
+npm ls                     # 列出当前安装的了所有包
+npm root                   # 查看当前包的安装路径
+npm root -g                # 查看全局的包的安装路径
+npm help                   # 帮助
+</code></pre><h4 id="-markdown-"><strong>关于Markdown</strong></h4>
+<p>Markdown 是一种轻量级标记语言，创始人为约翰·格鲁伯（John Gruber）和亚伦·斯沃茨（Aaron Swartz）。它允许人们“使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档”。[1]这种语言吸收了很多在电子邮件中已有的纯文本标记的特性。</p>
+<p>参考</p>
+<p><a href="http://bubbyroom.com/2013/08/11/migrate-my-blog-from-wordpress-to-hexo/" target="_blank">http://bubbyroom.com/2013/08/11/migrate-my-blog-from-wordpress-to-hexo/</a>
+<a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank">http://ibruce.info/2013/11/22/hexo-your-blog/</a>
+<a href="http://zipperary.com/categories/hexo/" target="_blank">http://zipperary.com/categories/hexo/</a>
+<a href="http://yangjian.me/workspace/building-blog-with-hexo/" target="_blank">http://yangjian.me/workspace/building-blog-with-hexo/</a>
+<a href="http://wowubuntu.com/markdown/" target="_blank">http://wowubuntu.com/markdown/</a></p>
+]]></content>
+    <summary type="html"><![CDATA[<p>存放主题文件，默认主题为<code>light</code>
+    <!--more--></p>
+<h3 id="-hexo-"><strong>Hexo简介</strong></h3>
+<p>Hexo是一个由Node.js驱动的,简单、快速、强大的Blog框架。可以快速的生成静态网页托管在GitHub、BAE等平台上。对Markdown有很好的支持，并支持从Wordpress、Octopress迁移。
+Hexo由台湾地区的开发者编写，他的blog地址请猛击此处，欢迎前去膜拜。<!--more--></p>
+<p>项目主页
+<a href="https://github.com/tommy351/hexo" target="_blank">https://github.com/tommy351/hexo</a></p>
+<p>使用手册
+<a href="http://zespia.tw/hexo/docs/" target="_blank">http://zespia.tw/hexo/docs/</a></p>
+<h3 id="-"><strong> 准备工作</strong></h3>
+<p>一颗不安于现状、充满好奇、爱折腾的心！</p>
+<p><strong>安装Git</strong></p>
+<pre><code>yum install git
+</code></pre><p><strong>安装Node</strong></p>
+<p>先介绍两个工具</p>
+<ol>
+<li>nvm 是nodejs version manager的简称，即：nodejs版本管理</li>
+<li>npm 是nodejs package manager的简称，即：nodejs模块管理</li>
+</ol>
+<p><strong>安装nvm</strong></p>
+<pre><code>curl https://raw.github.com/creationix/nvm/master/install.sh | sh
+echo &quot;. ~/.nvm/nvm.sh&quot; &gt;&gt; ~/.bashrc
+</code></pre><p>断开终端，再次连接后执行</p>
+<pre><code>nvm install 0.10.24
+</code></pre><p>安装npm</p>
+<pre><code>curl https://npmjs.org/install.sh | sh
+</code></pre><p>使用npm</p>
+<pre><code>npm use 0.10.24
+</code></pre><p>配置默认版本</p>
+<p>如果希望断开连接后继续使用，需要输入如下命令</p>
+<pre><code>npm update
+</code></pre><p><strong>配置GitHub</strong></p>
+<p>基本的注册使用就不再赘述，这里所涉及的配置是为了给Hexo发布到GitHub所做准备。
+配置ssh key
+在服务器上生成ssh key</p>
+<pre><code>cd ~/.ssh
+ssh-keygen -t rsa -C &quot;your_email@example.com&quot;
+</code></pre><p>一路回车即可，执行完毕会生成id_rsa和id_rsa.pub两个文件，将id_rsa.pub中的内容全部复制；
+在GitHub上添加Key
+进入GitHub - Account settings - SSH Keys - Add SSH key，将刚刚复制的内容全部粘贴进即可；
+测试</p>
+<pre><code>ssh -T git@github.com
+</code></pre><p>成功的话会有successfully的提示；
+ssh key的详细配置可参考官方文档：
+<a href="https://help.github.com/articles/generating-ssh-keys" target="_blank">https://help.github.com/articles/generating-ssh-keys</a>
+配置自己的github.io页面
+登入GitHub后选择Create New repository,Repository name需要符合username.github.io的命名规则。
+github.io
+github.io</p>
+<h3 id="-"><strong>基本安装</strong></h3>
+<p>Hexo的安装</p>
+<pre><code>npm install -g hexo
+hexo init /data/www/wwwroot/hexo #指定hexo工作目录
+Hexo的使用
+hexo n/new 写文章
+hexo g/generate 生成
+hexo s/server 本地调试，localhost:4000
+hexo d/deploy 发布文章
+Hexo的基本配置
+</code></pre><p>Hexo的整体配置是Hexo根目录中的_config.yml文件，大部分配置可以根据提示了解用处，不明白的可以参考手册、百度、Google，此处不再赘述。
+如果要发布文章到GitHub，需要修改_config.yml中的Deployment段</p>
+<pre><code>deploy:
+  type: github
+   repository: https://github.com/mayiwei/mayiwei.github.io.git
+   branch: master
+</code></pre><p>其余配置段请参考Hexo使用手册</p>
+<p>系统扩展
+更换主题
+下载主题</p>
+<pre><code>cd hexo/theme
+git clone https://github.com/hexojs/hexo-theme-    light.git light
+</code></pre><p>更多主题可以在<a href="https://github.com/tommy351/hexo/wiki/Themes找到。" target="_blank">https://github.com/tommy351/hexo/wiki/Themes找到。</a></p>
+<p>配置主题</p>
+<pre><code>vim hexo/_config.yml
+theme light
+</code></pre><h3 id="-github-"><strong>生成并部署到GitHub</strong></h3>
+<pre><code>hexo g
+hexo d
+</code></pre><h3 id="-"><strong>安装评论框</strong></h3>
+<p>因为Hexo生成的是静态文件，所以评论等动态内容需要使用第三方扩展，这里推荐使用多说。</p>
+<p><a href="http://duoshuo.com/" target="_blank">注册多说帐号</a></p>
+<p><strong>配置多说</strong></p>
+<p>vim hexo/theme/light/layput/_partial/comment.ejs
+<!-- Duoshuo Comment BEGIN --></p>
+<p><div class="ds-thread"></div></p>
+<p><script type="text/javascript">
+var duoshuoQuery = {short_name:&quot;mayiwei&quot;};
+(function() {
+    var ds = document.createElement(&#39;script&#39;);
+    ds.type = &#39;text/javascript&#39;;ds.async = true;
+    ds.src = &#39;<a href="http://static.duoshuo.com/embed.js" target="_blank">http://static.duoshuo.com/embed.js</a>&#39;;
+    ds.charset = &#39;UTF-8&#39;;
+    (document.getElementsByTagName(&#39;head&#39;)[0] 
+    || document.getElementsByTagName(&#39;body&#39;)[0]).appendChild(ds);
+})();
+</script>
+<!-- Duoshuo Comment END --></p>
+<p><strong>生成并部署</strong></p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装RSS插件</strong></p>
+<p>安装</p>
+<pre><code>npm install hexo-generator-feed
+</code></pre><p>配置</p>
+<pre><code>vim hexo/_config.yml
+plugins:
+- hexo-generator-feed
+vim hexo/theme/light/_config.yml
+rss: /atom.xml
+</code></pre><p><strong>生成并部署</strong></p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装sitemap插件</strong></p>
+<p>安装</p>
+<pre><code>npm install hexo-generator-sitemap
+</code></pre><p>配置</p>
+<pre><code>vim hexo/_config.yml
+plugins:
+- hexo-generator-sitemap
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装wordpress迁移插件</strong></p>
+<p>安装插件</p>
+<pre><code>npm install hexo-migrator-wordpress
+</code></pre><p>登录wordpress-》工具-》导出xml
+导入</p>
+<pre><code>hexo migrate wordpress source.xml
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><h3 id="-"><strong>安装微博挂件</strong></h3>
+<p>去app.weibo.com获取代码</p>
+<p>配置</p>
+<pre><code>vim hexo/_config.ynl
+widgets:
+- weibo
+
+vim hexo/themes/light/layout/_widget/weibo.js
+&lt;iframe width=&quot;100%&quot; height=&quot;550&quot; class=&quot;share_self&quot;  frameborder=&quot;0&quot; scrolling=&quot;no&quot; src=&quot;http://widget.weibo.com/weiboshow/index.php?language=&amp;width=0&amp;height=550&amp;fansRow=2&amp;ptype=1&amp;speed=0&amp;skin=1&amp;isTitle=1&amp;noborder=1&amp;isWeibo=1&amp;isFans=1&amp;uid=1434492110&amp;verifier=f479351c&amp;dpc=1&quot;&gt;&lt;/iframe&gt;
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><h3 id="-"><strong>安装分享按钮</strong></h3>
+<p>去百度分享获取分享代码</p>
+<p>配置</p>
+<pre><code>vim themes/light/layout/_partial/article.ejs
+</code></pre><p>删除</p>
+<p>&lt;%-partial(&#39;post/share&#39;)%&gt;</p>
+<p>替换为刚刚获取的分享代码
+生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p><strong>安装百度统计</strong></p>
+<p>去百度统计获取统计代码</p>
+<p>配置</p>
+<pre><code>vim themes/light/layout/_partial/baidu_analytics.ejs
+&lt;% if (theme.baidu_analytics){ %&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+#Your_Baidu_Analytics_Code
+&lt;/script&gt;
+&lt;% } %&gt;
+
+vim hexo/themes/light/_config.yml
+baidu_analytics: true
+
+
+vim hexo/themes/light/layout/_partial/head.ejs
+在/head前添加
+&lt;%- partial(&#39;baidu_analytics&#39;) %&gt;
+</code></pre><p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><h4 id="-favicon-"><strong>添加favicon</strong></h4>
+<p>制作facicon<a href="http://www.faviconer.com/" target="_blank">http://www.faviconer.com/</a></p>
+<p>配置
+    vim hexo/themes/light/layout/_partial/head.ejs
+删除
+    link href=&quot;&lt;%- config.root %&gt;favicon.png&quot; rel=&quot;icon&quot;&gt;
+替换为</p>
+<pre><code>&lt;link href=&quot;&lt;%- config.root %&gt;favicon.ico&quot; rel=&quot;icon&quot; type=&quot;image/x-ico&quot;&gt;
+</code></pre><p>将制作好的favicon放到hexo/source</p>
+<p>生成并部署</p>
+<pre><code>hexo g
+hexo d
+</code></pre><p>添加分类、标签云widget</p>
+<pre><code>vim hexo/themes/light/_config.yml
+widgets:
+- category
+- tagcloud
+</code></pre><p>添加友情链接widget
+添加配置文件</p>
+<pre><code>vim hexo/themes/light/layout/_widget/blogroll.ejs
+&lt;div class=&quot;widget tag&quot;&gt;
+&lt;h3 class=&quot;title&quot;&gt;友情链接&lt;/h3&gt;
+&lt;ul class=&quot;entry&quot;&gt;
+&lt;li&gt;&lt;a href=&quot;http://mayiwei.com/&quot; title=&quot;OPS Notes&quot;&gt;OPS Notes&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+</code></pre><p>配置</p>
+<pre><code>vim hexo/theme/light/_config.yml
+widgets:
+- blogroll
+</code></pre><h3 id="-"><strong>自定义页面</strong></h3>
+<p>生成自定义页面</p>
+<pre><code>hexo n page &quot;about&quot;
+</code></pre><p>到source/about/index.md编辑内容</p>
+<p>添加自定义页</p>
+<pre><code>vim hexo/themes/light/_config.yml
+
+menu:
+ 关于: /about
+</code></pre><p><strong>自定义404</strong>
+使用腾讯公益的404页面，详见：<a href="http://www.qq.com/404/" target="_blank">http://www.qq.com/404/</a>
+此自定义404页面只对顶级域名生效</p>
+<pre><code>vim hexo/source/404.html
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot; /&gt;
+&lt;title&gt;404&lt;/title&gt;                                                                                                                                       
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1&gt;404 Page Not Found&lt;/h1&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;http://    www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/    script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h3 id="-"><strong>系统优化</strong></h3>
+<p>使用自己的域名
+建立CNAME文件</p>
+<pre><code>vim hexo/source/CNAME
+mayiwei.com
+</code></pre><p>修改你的域名A记录，指向204.232.175.78
+如果需要其他二级域名，建立cname记录到usrname.github.io即可。
+主页文章显示摘要
+编辑md文件的时候，在要作为摘要的文字后面添加]]></summary>
+    
+      <category term="hexo" scheme="http://zmj.taojinroad.com/tags/hexo/"/>
+    
+      <category term="hexo" scheme="http://zmj.taojinroad.com/categories/hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[about]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/03/about/"/>
+    <id>http://zmj.taojinroad.com/2014/02/03/about/</id>
+    <published>2014-02-03T05:26:07.000Z</published>
+    <updated>2014-02-03T05:26:07.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[life]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/03/life/"/>
+    <id>http://zmj.taojinroad.com/2014/02/03/life/</id>
+    <published>2014-02-03T05:25:22.000Z</published>
+    <updated>2014-02-03T05:25:22.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[jishu]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/03/jishu/"/>
+    <id>http://zmj.taojinroad.com/2014/02/03/jishu/</id>
+    <published>2014-02-03T05:25:13.000Z</published>
+    <updated>2014-02-03T05:25:13.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/02/hello-world/"/>
+    <id>http://zmj.taojinroad.com/2014/02/02/hello-world/</id>
+    <published>2014-02-02T04:28:16.000Z</published>
+    <updated>2014-02-02T04:28:16.000Z</updated>
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
+]]></content>
+    
+    
+  </entry>
+  
+</feed>
