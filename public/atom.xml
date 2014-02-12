@@ -4,7 +4,7 @@
   <subtitle><![CDATA[技术宅,diy电子设备,编程,黑苹果]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://zmj.taojinroad.com/"/>
-  <updated>2014-02-07T11:27:22.693Z</updated>
+  <updated>2014-02-12T10:20:30.600Z</updated>
   <id>http://zmj.taojinroad.com/</id>
   
   <author>
@@ -15,11 +15,126 @@
   <generator uri="http://zespia.tw/hexo/">Hexo</generator>
   
   <entry>
+    <title><![CDATA[服务器解决emoji表情]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/12/server/"/>
+    <id>http://zmj.taojinroad.com/2014/02/12/server/</id>
+    <published>2014-02-12T10:12:43.000Z</published>
+    <updated>2014-02-12T10:20:21.000Z</updated>
+    <content type="html"><![CDATA[<p>坑爹的android 和iphone 需要是用emoji ，前端需要处理，后端也需要处理。
+亲测可用，自己修改了下内容，来自<a href="http://blog.csdn.net/shootyou/article/details/8236886" target="_blank">http://blog.csdn.net/shootyou/article/details/8236886</a> </p>
+<p>使用系统CentOS 6.2本来已经系统自带安装了mysql 5.1，但是奈何5.1不支持utf8mb4字符集，无法支持emoji，只能想办法将Mysql升级到5.5。</p>
+<p>这果然是一次蛋疼的升级过程。</p>
+<p>完整步骤：</p>
+<h3 id="1-">1.首先备份数据，虽说成功的升级数据不会丢失，但是保险起见备份下。</h3>
+<pre><code>mysqldump -u xxx -h xxx -P 3306 -p --all-databases &gt; databases.sql  
+</code></pre><p>最好连数据文件和配置文件也备份一份。</p>
+<pre><code>cp -R /data/mysql mysql-5.1-data  
+cp /etc/my.cnf my.cnf-5.1  
+</code></pre><p>备份完之后停止mysql服务。</p>
+<pre><code>service mysqld stop  
+</code></pre><p>好了，开始进入正题。</p>
+<h3 id="2-mysql">2.卸载旧版本的Mysql</h3>
+<pre><code>yum remove mysql mysql-*  
+</code></pre><p>执行之后再看看是不是残余一些mysql-libs之类的</p>
+<pre><code>yum list installed | grep mysql  
+</code></pre><p>如果有，并确认没用之后也可以删除。</p>
+<pre><code>yum remove mysql-libs  
+</code></pre><p>注意删除mysql-libs可能会对一些依赖软件产生影响，这里我们不讨论。
+好了，卸载的动作基本结束。</p>
+<h3 id="3-mysql5-5">3.安装Mysql5.5</h3>
+<p>这里使用yum安装的过程。</p>
+<p>在走了N多弯路之后我发现需要首先安装一些新的repo。</p>
+<pre><code>rpm -Uvh http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm  
+rpm -Uvh http://mirrors.neusoft.edu.cn/epel/6/i386/epel-release-6-8.noarch.rpm  
+rpm -Uvh http://packages.sw.be/rpmforge-release/rpmforge-release-0.5.2-2.el6.rf.x86_64.rpm  
+rpm -Uvh http://dl.iuscommunity.org/pub/ius/stable/Redhat/6/x86_64/epel-release-6-5.noarch.rpm  
+rpm -Uvh http://rpms.famillecollet.com/enterprise/remi-release-6.rpm  
+</code></pre><p>这个时候你再运行：</p>
+<pre><code>yum --enablerepo=remi,remi-test info mysql mysql-server  
+</code></pre><p>就会发现mysql的版本已经是5.5.x了。毫不犹豫安装之。</p>
+<pre><code>yum --enablerepo=remi,remi-test install mysql mysql-server  
+</code></pre><p>安装到此结束。接下来是启动和升级。</p>
+<h3 id="4-">4.启动和升级</h3>
+<p>这个时候你想直接启动十有八九会报错，主要的问题两块：</p>
+<p>一是配置文件，5.5相比5.1有些配置改名了，这个需要你对照启动错误日志一点点改进。</p>
+<p>二是没有执行mysql_upgrade。</p>
+<p>在确保配置文件没问题之后运行:</p>
+<pre><code>mysql_upgrade -u root -p  
+</code></pre><p>等他全部ok。
+再试试运行mysql。</p>
+<pre><code>service mysqld start  
+</code></pre><p>保佑你看到的是绿色的[ok]。</p>
+]]></content>
+    
+    
+      <category term="服务器" scheme="http://zmj.taojinroad.com/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+      <category term="服务器" scheme="http://zmj.taojinroad.com/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[tools]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/12/tools-1/"/>
+    <id>http://zmj.taojinroad.com/2014/02/12/tools-1/</id>
+    <published>2014-02-12T10:03:15.000Z</published>
+    <updated>2014-02-12T10:03:15.000Z</updated>
+    <content type="html"><![CDATA[]]></content>
+    
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[Dash 超好用的开发工具]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/12/tools/"/>
+    <id>http://zmj.taojinroad.com/2014/02/12/tools/</id>
+    <published>2014-02-12T09:34:12.000Z</published>
+    <updated>2014-02-12T09:42:16.000Z</updated>
+    <content type="html"><![CDATA[<p>在开发的时候，我经常很多时候需要多个开发文档，ios，android 还是java，jquery ，你会怎么做，大量的文档打开很是麻烦，我怎么处理的，就是在mac 系统上 安装了一个开源的工具。 Dash  ，这个在苹果的官方市场就可以下载到了，下面请看截图：</p>
+<p><img src="img/dash_1.png" alt="image"></p>
+]]></content>
+    
+    
+      <category term="android" scheme="http://zmj.taojinroad.com/tags/android/"/>
+    
+      <category term="iphone" scheme="http://zmj.taojinroad.com/tags/iphone/"/>
+    
+      <category term="开发工具" scheme="http://zmj.taojinroad.com/tags/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+      <category term="android" scheme="http://zmj.taojinroad.com/categories/android/"/>
+    
+      <category term="iphone" scheme="http://zmj.taojinroad.com/categories/android/iphone/"/>
+    
+      <category term="开发工具" scheme="http://zmj.taojinroad.com/categories/android/iphone/%E5%BC%80%E5%8F%91%E5%B7%A5%E5%85%B7/"/>
+    
+  </entry>
+  
+  <entry>
+    <title><![CDATA[android_ndk]]></title>
+    <link href="http://zmj.taojinroad.com/2014/02/12/android_ndk/"/>
+    <id>http://zmj.taojinroad.com/2014/02/12/android_ndk/</id>
+    <published>2014-02-12T03:41:48.000Z</published>
+    <updated>2014-02-12T09:44:25.000Z</updated>
+    <content type="html"><![CDATA[<p>暂时没想到写什么，iphone 和android 使用jni 语言兼容，实现微信的语音功能。待写中。</p>
+]]></content>
+    
+    
+      <category term="android" scheme="http://zmj.taojinroad.com/tags/android/"/>
+    
+      <category term="ndk" scheme="http://zmj.taojinroad.com/tags/ndk/"/>
+    
+      <category term="android" scheme="http://zmj.taojinroad.com/categories/android/"/>
+    
+      <category term="ndk" scheme="http://zmj.taojinroad.com/categories/android/ndk/"/>
+    
+  </entry>
+  
+  <entry>
     <title><![CDATA[台式机安装esxi和ros，自已diy小米路由]]></title>
     <link href="http://zmj.taojinroad.com/2014/02/07/esxi/"/>
     <id>http://zmj.taojinroad.com/2014/02/07/esxi/</id>
     <published>2014-02-07T07:07:36.000Z</published>
-    <updated>2014-02-07T11:02:23.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[<h3 id="-esxi-"><strong>安装esxi</strong></h3>
 <a id="more"></a>
 
@@ -59,7 +174,7 @@ Intel Pro/1000 MT Desktop Adapter 一般电脑城都有，二手的，仿冒的�
     <link href="http://zmj.taojinroad.com/2014/02/05/dns/"/>
     <id>http://zmj.taojinroad.com/2014/02/05/dns/</id>
     <published>2014-02-05T15:37:43.000Z</published>
-    <updated>2014-02-07T10:01:25.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[<p>很多人碰到dns有问题，我这就碰到部分dns无法访问站点的错误，而且是广州的，大家可以下载试试这个
 <a href="https://support.dnspod.cn/Public/files/check_dns.zip" target="_blank">工具</a></p>
 <p>还有就是这个网站
@@ -78,7 +193,7 @@ Intel Pro/1000 MT Desktop Adapter 一般电脑城都有，二手的，仿冒的�
     <link href="http://zmj.taojinroad.com/2014/02/05/hexo3/"/>
     <id>http://zmj.taojinroad.com/2014/02/05/hexo3/</id>
     <published>2014-02-05T02:55:23.000Z</published>
-    <updated>2014-02-05T02:57:21.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[<p>进入到<a href="https://github.com/blog/273-github-ribbons" target="_blank">https://github.com/blog/273-github-ribbons</a></p>
 <p><a id="more"></a>
 拷贝代码添加到header.ejs中</p>
@@ -93,7 +208,7 @@ Intel Pro/1000 MT Desktop Adapter 一般电脑城都有，二手的，仿冒的�
     <link href="http://zmj.taojinroad.com/2014/02/04/hexo2/"/>
     <id>http://zmj.taojinroad.com/2014/02/04/hexo2/</id>
     <published>2014-02-04T13:14:01.000Z</published>
-    <updated>2014-02-04T15:59:15.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[<h1 id="themes">themes</h1>
 <p>存放主题文件，默认主题为<code>light</code>
 <a id="more"></a></p>
@@ -131,7 +246,7 @@ Intel Pro/1000 MT Desktop Adapter 一般电脑城都有，二手的，仿冒的�
     <link href="http://zmj.taojinroad.com/2014/02/03/hexo1/"/>
     <id>http://zmj.taojinroad.com/2014/02/03/hexo1/</id>
     <published>2014-02-03T07:12:35.000Z</published>
-    <updated>2014-02-04T15:59:29.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[<p>存放主题文件，默认主题为<code>light</code>
     <a id="more"></a></p>
 <h3 id="-hexo-"><strong>Hexo简介</strong></h3>
@@ -639,7 +754,7 @@ mayiwei.com
     <link href="http://zmj.taojinroad.com/2014/02/03/about/"/>
     <id>http://zmj.taojinroad.com/2014/02/03/about/</id>
     <published>2014-02-03T05:26:07.000Z</published>
-    <updated>2014-02-03T05:26:07.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[]]></content>
     
     
@@ -650,7 +765,7 @@ mayiwei.com
     <link href="http://zmj.taojinroad.com/2014/02/03/life/"/>
     <id>http://zmj.taojinroad.com/2014/02/03/life/</id>
     <published>2014-02-03T05:25:22.000Z</published>
-    <updated>2014-02-03T05:25:22.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[]]></content>
     
     
@@ -661,7 +776,7 @@ mayiwei.com
     <link href="http://zmj.taojinroad.com/2014/02/03/jishu/"/>
     <id>http://zmj.taojinroad.com/2014/02/03/jishu/</id>
     <published>2014-02-03T05:25:13.000Z</published>
-    <updated>2014-02-03T05:25:13.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[]]></content>
     
     
@@ -672,7 +787,7 @@ mayiwei.com
     <link href="http://zmj.taojinroad.com/2014/02/02/hello-world/"/>
     <id>http://zmj.taojinroad.com/2014/02/02/hello-world/</id>
     <published>2014-02-02T04:28:16.000Z</published>
-    <updated>2014-02-02T04:28:16.000Z</updated>
+    <updated>2014-02-11T06:39:22.000Z</updated>
     <content type="html"><![CDATA[<p>Welcome to <a href="http://zespia.tw/hexo" target="_blank">Hexo</a>! This is your very first post. Check <a href="http://zespia.tw/hexo/docs" target="_blank">documentation</a> to learn how to use.</p>
 ]]></content>
     
